@@ -1,0 +1,13 @@
+.analytics {
+    color: white;
+    text-align: center;
+}
+
+.tableContainer {
+    width: 100%;
+    padding: 65px 100px 100px 100px;
+}
+
+.analytics > h1 {
+    padding-top: 50px;
+}

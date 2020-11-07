@@ -1,0 +1,46 @@
+.live {
+    color: white;
+    text-align: center;
+}
+
+.live > p {
+    text-align: right;
+    margin: 0 100px;
+    margin-top: 65px;
+}
+
+.liveContainer {
+    display: flex;
+    width: 100%;
+    padding: 10px 100px 100px 100px;
+}
+
+.filterContainer {
+    width: 10%;
+    text-align: left;
+    padding-left: 0%;
+}
+
+.priorityFilter > p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.problemFilter > p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.priorityFilter > div > label, .problemFilter > div > label {
+    margin-left: 10px;
+}
+
+.livePosts {
+    width: 90%;
+}
+
+.live > h1 {
+    padding-top: 50px;
+}
+

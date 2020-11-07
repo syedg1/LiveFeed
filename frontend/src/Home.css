@@ -1,0 +1,37 @@
+.home {
+    position: relative;
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2019/07/25/lightning-and-trees-wallpaper.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.homeText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 60px 100px;
+    border-radius: 35px;
+    font-size: 24px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.homeText > p {
+    font-size: 26px;
+    font-style: normal;
+    margin-bottom: 0 !important;
+}
+
+.homeText > p > u {
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.homeText > h2 {
+    font-style: normal;
+    margin-bottom: 0 !important;
+}

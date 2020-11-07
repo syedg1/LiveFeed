@@ -1,0 +1,35 @@
+.post {
+    display: flex;
+    padding: 30px 20px;
+    border: 1px solid lightgray;
+}
+
+.postInfo {
+    width: 30%;
+    padding: 0 10px;
+    text-align: left;
+    position: relative;
+    border-right: 1px solid lightgray;
+}
+
+.contentInfo {
+    width: 70%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.accountInfo {
+    display: flex;
+}
+
+.accountInfo > p {
+    font-size: 26px;
+}
+
+.profilePicture {
+    width: 85px !important;
+    height: 85px !important;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border-radius: 42.5px;
+}
