@@ -157,7 +157,7 @@ function LiveFeed({ posts }) {
                 </div>
 
                 <div className="livePosts">
-                    {toShow.map(({name,image,content,problem,priority,id}) => 
+                    {toShow.reverse().map(({name,image,content,problem,priority,id}) => 
                     <Post   
                         image={image}
                         name={name}

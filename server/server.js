@@ -9,7 +9,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var random = require('random-name');
 var port = process.env.PORT || 3001;
-var API = process.env.NODE_ENV === 'production' ? 'https://live-updates-feed.herokuapp.com' : 'http://localhost:3001';
+var API = process.env.NODE_ENV === 'production' ? 'https://live-updates-feed-backend.herokuapp.com' : 'http://localhost:3001';
 const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 // setup lorem ipsum random text generator
 const lorem = new LoremIpsum({});

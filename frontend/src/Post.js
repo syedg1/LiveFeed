@@ -2,7 +2,6 @@ import React from 'react';
 import './Post.css'
 
 function Post({ image, name, problem, priority, content }) {
-    console.log(image);
     return (
         <div className='post'>
             <div className="postInfo">

@@ -12,7 +12,7 @@ import './App.css';
 //
 import io from 'socket.io-client';
 console.log(process.env.NODE_ENV);
-var API = process.env.NODE_ENV === 'production' ? 'https://live-updates-feed.herokuapp.com' : 'http://localhost:3001';
+var API = process.env.NODE_ENV === 'production' ? 'https://live-updates-feed-backend.herokuapp.com' : 'http://localhost:3001';
 const socket = io(API);
 //
 // See: https://socket.io/get-started/chat
