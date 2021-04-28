@@ -63,6 +63,10 @@ io.on('connection', async function(socket){
 
 });
 
+app.get('/test', (req,res) => {
+  res.send("Hello World");
+});
+
 // Sends back the image files when they are requested
 app.get(/^(.+)$/, function(req,res){
   res.sendFile(__dirname + req.params[0]);
