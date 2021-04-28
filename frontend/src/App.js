@@ -11,7 +11,9 @@ import './App.css';
 // Then import socket io and create a socket:
 //
 import io from 'socket.io-client';
-const socket = io('http://localhost:3001');
+console.log(process.env.NODE_ENV);
+var API = process.env.NODE_ENV === 'production' ? 'https://live-updates-feed.herokuapp.com' : 'http://localhost:3001';
+const socket = io(API);
 //
 // See: https://socket.io/get-started/chat
 //      https://www.npmjs.com/package/socket.io-client
