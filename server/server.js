@@ -8,8 +8,8 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var random = require('random-name');
-var path = require('path')
 var port = process.env.PORT || 3001;
+var API = process.env.NODE_ENV === 'production' ? 'https://live-updates-feed.herokuapp.com' : 'http://localhost:3001';
 const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 // setup lorem ipsum random text generator
 const lorem = new LoremIpsum({});
@@ -46,7 +46,7 @@ io.on('connection', async function(socket){
       post = 
       {
         name: random.first() + " " + random.last(),
-        image: "http://localhost:3001/images/" + 
+        image: API + "/images/" + 
                (Math.floor(Math.random() * 114) + 1) + ".jpg",
         problem: problemType,
         priority: priorityLevel,
