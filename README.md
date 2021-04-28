@@ -1,4 +1,4 @@
-# LiveFeed
+# Live Social Media Feed
 
 This project is hosted at: https://live-updates-feed.herokuapp.com/
 
