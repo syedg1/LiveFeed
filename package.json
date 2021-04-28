@@ -1,6 +1,12 @@
 {
+    "name": "livefeed",
+    "description": "live social media updates related to natural disasters",
+    "version": "1.0.0",
     "scripts": {
         "start": "cd server && npm install && node server.js",
-        "heroku-postbuild": "cd ../frontend && npm install && npm run build"
+        "heroku-postbuild": "cd frontend && npm install && npm run build"
+    },
+    "engines": {
+        "node": "14.x"
     }
 }
